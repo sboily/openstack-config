@@ -1,0 +1,10 @@
+cinder :
+
+cinder-api
+cinder-common
+cinder-scheduler
+cinder-volume
+
+others :
+
+nfs-kernel-server

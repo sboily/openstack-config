@@ -1,0 +1,56 @@
+neutron :
+
+neutron-common
+neutron-plugin-openvswitch
+neutron-plugin-openvswitch-agent
+neutron-server
+
+ceilometer :
+
+ceilometer-agent-central
+ceilometer-api
+ceilometer-collector
+ceilometer-common
+
+glance :
+
+glance
+glance-api
+glance-common
+glance-registry
+
+nova :
+
+nova-ajax-console-proxy
+nova-api
+nova-cert
+nova-common
+nova-conductor
+nova-consoleauth
+nova-doc
+nova-scheduler
+nova-spiceproxy
+
+keystone :
+
+keystone
+
+heat :
+
+heat-api
+heat-api-cfn
+heat-api-cloudwatch
+heat-common
+heat-engine
+
+horizon :
+
+openstack-dashboard
+
+other :
+
+rabbitmq-server
+mysql-server
+openvswitch-switch
+openvswitch-datapath-dkms
+ntp

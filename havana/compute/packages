@@ -1,0 +1,18 @@
+nova :
+
+nova-compute
+nova-compute-kvm
+
+ceilometer :
+
+ceilometer-agent-compute
+
+neutron :
+
+neutron-plugin-openvswitch-agent
+
+others :
+
+openvswitch-switch
+ntp
+portmap

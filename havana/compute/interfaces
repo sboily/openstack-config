@@ -1,0 +1,41 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto p5p1
+iface p5p1 inet static
+	address 10.41.0.3
+	netmask 255.255.255.0
+	network 10.41.0.0
+	broadcast 10.41.0.255
+	gateway 10.41.0.1
+	# dns-* options are implemented by the resolvconf package, if installed
+	dns-nameservers 192.168.32.254
+	dns-search quintana.avencall.com
+
+auto eth0
+iface eth0 inet manual
+    up ifconfig $IFACE 0.0.0.0 up
+    down ifconfig $IFACE down
+
+auto vlan411
+iface vlan411 inet manual
+	up ifconfig $IFACE 0.0.0.0 up
+	down ifconfig $IFACE down
+        vlan-raw-device eth0
+
+auto vlan412
+iface vlan412 inet manual
+	up ifconfig $IFACE 0.0.0.0 up
+	down ifconfig $IFACE down
+        vlan-raw-device eth0
+
+auto vlan392
+iface vlan392 inet manual
+	up ifconfig $IFACE 0.0.0.0 up
+	down ifconfig $IFACE down
+        vlan-raw-device eth0
